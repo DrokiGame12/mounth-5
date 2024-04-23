@@ -2,16 +2,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import UserRegisterPage from './pages/usersRegisterPage/UsersRegisterPage';
 import UserListPage from './pages/usersListPage/UsersListPage';
-// import Menu from './components/Menu';
+import Menu from './components/Menu';
 
 function App() {
   return (
     <BrowserRouter>
-      {/* <Menu/> */}
+      <Menu/>
       <Routes>
-        <Route index element={ <UserListPage/>} />
-        {/* <Route index element={ <UserRegisterPage/> } />
-        <Route path={"/users"} element={ <UserListPage/> } /> */}
+        
+        <Route index element={ <UserRegisterPage/> } />
+        <Route path={"/users"} element={ <UserListPage/> } />
       </Routes>
     </BrowserRouter>
   );
